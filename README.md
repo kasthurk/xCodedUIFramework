@@ -1,5 +1,5 @@
 # xCodedUI: D.R.Y. UI Test Automation Framework
-http://cesarmrosales.ghost.io/
+Visit http://cesarmrosales.ghost.io/ for more information.
 
 This framework is meant to help individuals that are working with UI Test Automation, specifically those working with Visual Studio Coded UI. You can take this framework and make it fit the needs of most HTML applications and achieve production ready UI test automation. Have fun!
 
