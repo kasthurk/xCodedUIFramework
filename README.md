@@ -10,4 +10,5 @@ This class library contains extended Coded UI control classes that foster framew
 ### xCodedUI.AppFramework
 This Coded UI class library supports the popular Page Object design pattern and contains built-in configuration for Coded UI data driven testing and automated HTML report log generation. 
 
+
 Coded UI requires Visual Studio Premium or Ultimate.
