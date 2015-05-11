@@ -8,7 +8,7 @@ This framework is meant to help individuals that are working with UI Test Automa
 This class library contains extended Coded UI control classes that foster framework sustainability.
 
 ### xCodedUI.AppFramework
-This Coded UI class library supports the popular Page Object design pattern and contains built-in configuration for Coded UI data driven testing and automated HTML report log generation. 
+This Coded UI project supports the popular Page Object design pattern and contains built-in configuration for Coded UI data driven testing and automated HTML report log generation. The project is set up with a basic 'Hello World' example utilizing a google search page example.
 
 
 Coded UI requires Visual Studio Premium or Ultimate.
