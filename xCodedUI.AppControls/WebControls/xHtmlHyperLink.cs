@@ -42,12 +42,7 @@ namespace xCodedUI.AppControls.WebControls
             this.SetFocus();
             Mouse.Click(this);
         }
-        public void DoubleClick()
-        {
-            this.WaitForControlReady();
-            this.SetFocus();
-            Mouse.Click(this);
-        }
+
         public void SendKeys(string text)
         {
             this.WaitForControlReady();
