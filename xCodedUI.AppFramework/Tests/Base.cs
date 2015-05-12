@@ -30,9 +30,8 @@ namespace xCodedUI.AppFramework
         [TestCleanup()]
         public void MyTestCleanup()
         {
-
+            // \m/
         }
-
 
         // Retry failed action error handler
         private void Playback_PlaybackError(object sender, PlaybackErrorEventArgs e)
@@ -41,7 +40,6 @@ namespace xCodedUI.AppFramework
             e.Result = PlaybackErrorOptions.Retry;
             Keyboard.SendKeys("{Enter}");
         }
-
 
         /// <summary>
         ///Gets or sets the test context which provides

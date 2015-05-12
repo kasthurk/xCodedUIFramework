@@ -11,6 +11,7 @@ namespace xCodedUI.AppFramework
     {
         private string environment = ConfigurationManager.AppSettings["Environment"];
         xBrowser browser;
+        GoogleHomePage g;
 
         /// <summary>
         /// This method is a sample 'Hello World' automated UI test
@@ -20,7 +21,7 @@ namespace xCodedUI.AppFramework
         {
             // Your objects
             browser = new xBrowser(environment);
-            GoogleHomePage g = new GoogleHomePage(browser);
+            g = new GoogleHomePage(browser);
 
             // Your test steps
             g.Search();
@@ -38,7 +39,7 @@ namespace xCodedUI.AppFramework
             string searchText = TestContext.DataRow["Search Text"].ToString();
 
             browser = new xBrowser(environment);
-            GoogleHomePage g = new GoogleHomePage(browser);
+            g = new GoogleHomePage(browser);
             g.Search(searchText);
         }
     }
