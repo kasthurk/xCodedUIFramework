@@ -17,10 +17,9 @@ namespace xCodedUI.AppFramework.Pages
         private xHtmlEdit searchBox;
         private xHtmlButton searchBtn;
 
-        public GoogleHomePage(Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow b)
+        public GoogleHomePage(xBrowser b)
         {
             this.browser = b;
-
             searchBox = new xHtmlEdit(b, "lst-ib");
             searchBtn = new xHtmlButton(b, "btnG", "Name");
         }
