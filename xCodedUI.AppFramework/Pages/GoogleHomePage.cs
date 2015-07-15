@@ -13,15 +13,15 @@ namespace xCodedUI.AppFramework.Pages
     /// </summary>
     public class GoogleHomePage
     {
-        private Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow browser;
-        private xHtmlEdit searchBox;
-        private xHtmlButton searchBtn;
+        private Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow _browser;
+        private xHtmlEdit _searchBox;
+        private xHtmlButton _searchBtn;
 
         public GoogleHomePage(xBrowser b)
         {
-            this.browser = b;
-            searchBox = new xHtmlEdit(b, "lst-ib");
-            searchBtn = new xHtmlButton(b, "btnG", "Name");
+            _browser = b;
+            _searchBox = new xHtmlEdit(b, "lst-ib");
+            _searchBtn = new xHtmlButton(b, "btnG", "Name");
         }
 
         /// <summary>
@@ -31,8 +31,8 @@ namespace xCodedUI.AppFramework.Pages
         /// <param name="text">Search Text</param>
         public void Search(string text = "Hello World")
         {
-            searchBox.SendKeys(text);
-            searchBtn.Click();
+            _searchBox.SendKeys(text);
+            _searchBtn.Click();
         }
 
     }

@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UITesting;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using xCodedUI.AppControls;
 
-namespace xCodedUI.AppFramework
+namespace xCodedUI.AppFramework.Tests
 {
     /// <summary>
     /// Base class for test classes 

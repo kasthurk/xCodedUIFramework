@@ -15,7 +15,7 @@ namespace xCodedUI.AppControls
         public xBrowser() : base() { }
         public xBrowser(string url)
         {
-            BrowserWindow.Launch(url);
+            Launch(url);
         }
 
         /// <summary>
@@ -28,9 +28,10 @@ namespace xCodedUI.AppControls
         }
 
         /// <summary>
-        /// 
+        /// Skips property set verification after control manipulation
+        /// Helpful when dealing with legacy JavaScript scenarios
         /// </summary>
-        /// <param name="b"></param>
+        /// <param name="skipVerify"></param>
         public static void SkipPropertyVerification(bool skipVerify)
         {
             Playback.PlaybackSettings.SkipSetPropertyVerification = skipVerify;
@@ -48,15 +49,16 @@ namespace xCodedUI.AppControls
                 p.Kill();
             }
 
-            BrowserWindow.ClearCookies();
-            BrowserWindow.ClearCache();
+            ClearCookies();
+            ClearCache();
         }
 
         /// <summary>
         /// Utilized to switch between browser windows
         /// Selenium plugin is required for Coded UI Cross-Browser compatibility
         /// </summary>
-        /// <param name="b">Defaults to Internet Explorer class and can additionally take in class names for Chrome, Firefox</param>
+        /// <param name="browserClass">Defaults to Internet Explorer class and can 
+        /// additionally take in class names for Chrome, Firefox</param>
         /// <returns></returns>
         public static UITestControlCollection SwitchWindow(BrowserWindow b, string browserClass = "IEFrame")
         {
@@ -68,7 +70,7 @@ namespace xCodedUI.AppControls
         /// Selects 'OK' for browser dialog popups
         /// </summary>
         /// <param name="b">Takes current browser</param>
-        public static void AlertOK(BrowserWindow b)
+        public static void AlertOk(BrowserWindow b)
         {
             b.PerformDialogAction(BrowserDialogAction.Ok);
         }

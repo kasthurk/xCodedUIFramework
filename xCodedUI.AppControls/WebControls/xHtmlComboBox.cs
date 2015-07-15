@@ -25,6 +25,7 @@ namespace xCodedUI.AppControls.WebControls
         public void Select(string text)
         {
             this.WaitForControlReady();
+            this.SetFocus();
             this.SelectedItem = text;
         }
 
@@ -52,7 +53,6 @@ namespace xCodedUI.AppControls.WebControls
         public void Focus()
         {
             this.WaitForControlReady();
-            this.SetFocus();
             this.SetFocus();
         }
 

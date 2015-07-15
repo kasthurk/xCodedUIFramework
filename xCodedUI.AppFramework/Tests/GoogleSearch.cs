@@ -3,14 +3,15 @@ using Microsoft.VisualStudio.TestTools.UITesting;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using xCodedUI.AppControls;
 using xCodedUI.AppFramework.Pages;
+using xCodedUI.AppFramework.Tests;
 
 namespace xCodedUI.AppFramework
 {
     [CodedUITest]
     public class GoogleSearch : Base
     {
-        private string environment = ConfigurationManager.AppSettings["Environment"];
-        xBrowser browser;
+        private readonly string _environment = ConfigurationManager.AppSettings["Environment"];
+        xBrowser _browser;
         GoogleHomePage g;
 
         /// <summary>
@@ -20,8 +21,8 @@ namespace xCodedUI.AppFramework
         public void SearchTest()
         {
             // Your objects
-            browser = new xBrowser(environment);
-            g = new GoogleHomePage(browser);
+            _browser = new xBrowser(_environment);
+            g = new GoogleHomePage(_browser);
 
             // Your test steps
             g.Search();
@@ -38,8 +39,8 @@ namespace xCodedUI.AppFramework
             // Variable from data source
             string searchText = TestContext.DataRow["Search Text"].ToString();
 
-            browser = new xBrowser(environment);
-            g = new GoogleHomePage(browser);
+            _browser = new xBrowser(_environment);
+            g = new GoogleHomePage(_browser);
             g.Search(searchText);
         }
     }

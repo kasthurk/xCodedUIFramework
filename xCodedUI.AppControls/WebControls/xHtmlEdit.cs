@@ -21,7 +21,6 @@ namespace xCodedUI.AppControls.WebControls
         {
             this.WaitForControlReady();
             this.SetFocus();
-            this.SetFocus();
         }
 
         public void Click()

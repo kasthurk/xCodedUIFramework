@@ -13,7 +13,7 @@ namespace xCodedUI.AppControls
     {
         void Focus();
         void Click();
-        void SendKeys(String s);
+        void SendKeys(string s);
         void Tab();
     }
 }
