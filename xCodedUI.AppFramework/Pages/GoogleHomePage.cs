@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using xCodedUI.AppControls;
 using xCodedUI.AppControls.WebControls;
+using Microsoft.VisualStudio.TestTools.UITesting;
 
 namespace xCodedUI.AppFramework.Pages
 {
@@ -13,7 +14,7 @@ namespace xCodedUI.AppFramework.Pages
     /// </summary>
     public class GoogleHomePage
     {
-        private Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow _browser;
+        private BrowserWindow _browser;
         private xHtmlEdit _searchBox;
         private xHtmlButton _searchBtn;
 
